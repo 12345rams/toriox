@@ -1,0 +1,139 @@
+
+.chat-container {
+    width: 300px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    height: 90vh;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.chat-messages {
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.message.user {
+    background-color: #007bff;
+    color: #fff;
+    text-align: right;
+}
+
+.message.bot {
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: left;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align the button to the right bottom */
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+
+
+/* Chat button styles */
+.chat-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 16px;
+   position: absolute;
+   top:0%
+}
+
+/* Sample questions and answers styles */
+.message.bot {
+    background-color: #f0f0f0;
+    color: #000;
+    text-align: left;
+    max-width: 80%;
+    margin-left: 10px; /* Add some margin to the left */
+}
+
+/* Sample questions and answers */
+.message.bot::before {
+    content: "Bot: ";
+    font-weight: bold;
+}
+
+.message.user {
+    background-color: #007bff;
+    color: #fff;
+    text-align: right;
+    max-width: 80%;
+    margin-right: 10px; /* Add some margin to the right */
+}
+
+/* Sample questions and answers */
+.message.user::before {
+    content: "You: ";
+    font-weight: bold;
+}
+
+/* Chat header and close button styles */
+/* Your existing chat header and close button styles */
